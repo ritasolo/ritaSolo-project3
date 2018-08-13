@@ -1,0 +1,27 @@
+form {
+  text-align: left;
+  margin-left: 480px;
+  margin-top: 50px;
+}
+
+label {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+
+.pulse2 {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+

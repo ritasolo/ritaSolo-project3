@@ -1,0 +1,43 @@
+h1 {
+    font-family: 'VT323', monospace;
+    z-index: 15;
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+    left: 300px;
+    bottom: 30px;
+}
+
+.solarsystemText h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  color: white;
+  margin: 5px 0;
+}
+
+.text h2 {
+  left: -210px;
+  top: 15px;
+  position: relative;
+}
+
+p, ul li {
+  font-family: 'VT323', monospace;
+  color: white;
+  font-size: 25px;
+}
+
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+} 
+

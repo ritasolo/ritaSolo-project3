@@ -6,736 +6,226 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <title>Project 3</title>
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <style>
-    
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
-
-@keyframes orbit1 {
-	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(100px) rotate(-300deg); }
-}
-
-@keyframes orbit2 {
-	from { 	transform: rotate(0deg) translateX(110px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(110px) rotate(-300deg); }
-}
-
-@keyframes orbit3 {
-	from { 	transform: rotate(0deg) translateX(-120px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(-120px) rotate(-300deg); }
-}
-
-@keyframes orbit4 {
-	from { 	transform: rotate(0deg) translateX(140px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(140px) rotate(-300deg); }
-}
-
-@keyframes orbit5 {
-	from { 	transform: rotate(0deg) translateX(-200px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(-200px) rotate(-300deg); }
-}
-
-@keyframes orbit6 {
-	from { 	transform: rotate(0deg) translateX(250px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(250px) rotate(-300deg); }
-}
-
-@keyframes orbit7 {
-	from { 	transform: rotate(0deg) translateX(300px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(300px) rotate(-300deg); }
-}
-
-@keyframes orbit8 {
-	from { 	transform: rotate(0deg) translateX(-350px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(-350px) rotate(-300deg); }
-}
-
-@keyframes orbit9 {
-	from { 	transform: rotate(0deg) translateX(400px) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(400px) rotate(-300deg); }
-}
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse2 {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.02, 1.02, 1.02);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-.pulse2 {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-}
-
-
-
-
-    /* Expanded Animations */
-    @keyframes glitch-animation {
-      0% {
-        clip: rect(42px, 9999px, 44px, 0);
-      }
-      5% {
-        clip: rect(12px, 9999px, 59px, 0);
-      }
-      10% {
-        clip: rect(48px, 9999px, 29px, 0);
-      }
-      15.0% {
-        clip: rect(42px, 9999px, 73px, 0);
-      }
-      20% {
-        clip: rect(63px, 9999px, 27px, 0);
-      }
-      25% {
-        clip: rect(34px, 9999px, 55px, 0);
-      }
-      30.0% {
-        clip: rect(86px, 9999px, 73px, 0);
-      }
-      35% {
-        clip: rect(20px, 9999px, 20px, 0);
-      }
-      40% {
-        clip: rect(26px, 9999px, 60px, 0);
-      }
-      45% {
-        clip: rect(25px, 9999px, 66px, 0);
-      }
-      50% {
-        clip: rect(57px, 9999px, 98px, 0);
-      }
-      55.0% {
-        clip: rect(5px, 9999px, 46px, 0);
-      }
-      60.0% {
-        clip: rect(82px, 9999px, 31px, 0);
-      }
-      65% {
-        clip: rect(54px, 9999px, 27px, 0);
-      }
-      70% {
-        clip: rect(28px, 9999px, 99px, 0);
-      }
-      75% {
-        clip: rect(45px, 9999px, 69px, 0);
-      }
-      80% {
-        clip: rect(23px, 9999px, 85px, 0);
-      }
-      85.0% {
-        clip: rect(54px, 9999px, 84px, 0);
-      }
-      90% {
-        clip: rect(45px, 9999px, 47px, 0);
-      }
-      95% {
-        clip: rect(37px, 9999px, 20px, 0);
-      }
-      100% {
-        clip: rect(4px, 9999px, 91px, 0);
-      }
-    }
-
-    @keyframes glitch-animation-2 {
-      0% {
-        clip: rect(65px, 9999px, 100px, 0);
-      }
-      5% {
-        clip: rect(52px, 9999px, 74px, 0);
-      }
-      10% {
-        clip: rect(79px, 9999px, 85px, 0);
-      }
-      15.0% {
-        clip: rect(75px, 9999px, 5px, 0);
-      }
-      20% {
-        clip: rect(67px, 9999px, 61px, 0);
-      }
-      25% {
-        clip: rect(14px, 9999px, 79px, 0);
-      }
-      30.0% {
-        clip: rect(1px, 9999px, 66px, 0);
-      }
-      35% {
-        clip: rect(86px, 9999px, 30px, 0);
-      }
-      40% {
-        clip: rect(23px, 9999px, 98px, 0);
-      }
-      45% {
-        clip: rect(85px, 9999px, 72px, 0);
-      }
-      50% {
-        clip: rect(71px, 9999px, 75px, 0);
-      }
-      55.0% {
-        clip: rect(2px, 9999px, 48px, 0);
-      }
-      60.0% {
-        clip: rect(30px, 9999px, 16px, 0);
-      }
-      65% {
-        clip: rect(59px, 9999px, 50px, 0);
-      }
-      70% {
-        clip: rect(41px, 9999px, 62px, 0);
-      }
-      75% {
-        clip: rect(2px, 9999px, 82px, 0);
-      }
-      80% {
-        clip: rect(47px, 9999px, 73px, 0);
-      }
-      85.0% {
-        clip: rect(3px, 9999px, 27px, 0);
-      }
-      90% {
-        clip: rect(26px, 9999px, 55px, 0);
-      }
-      95% {
-        clip: rect(42px, 9999px, 97px, 0);
-      }
-      100% {
-        clip: rect(38px, 9999px, 49px, 0);
-      }
-    }
-  
-
-body {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-  z-index:0;
-}
-
-h1 {
-    font-family: 'VT323', monospace;
-    z-index: 15;
-    font-size: 40px;
-    color: white;
-    margin: 20px 0;
-    left: 300px;
-    bottom: 30px;
-}
-
-h2 {
-  font-family: 'VT323', monospace;
-  font-size: 25px;
-  color: white;
-  margin: 5px 0;
-}
-
-p, ul li {
-  font-family: 'VT323', monospace;
-  color: white;
-  font-size: 25px;
-}
-
-a {
-  color: white;
-}
-
-.arrow a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: yellowgreen;
-}
-
-form {
-  text-align: left;
-  margin-left: 480px;
-  margin-top: 50px;
-}
-
-label {
-  color: white;
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-}
-
-
-.quizQuestion {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 100px 0;
-}
-
-.solarsystemText {
-  width: 80%;
-  margin: 0 auto;
-  padding: 100px 0;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 30px;
-  display: flex;
-}
-
-.solarsystemText h1 {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-img {
-  width: 100%;
-}
-
-.images {
-  margin-right: 50px;
-}
-
-.symbol {
-  position: relative;
-  
-}
-
-.solarsystemText .images {
-  width: 40%;
-  animation: pulse2 5s infinite;
-} 
-
-.solarsystemText .info {
-  padding: 20px;
-}
-
-.text { 
-    width: 100vw;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 190px;
-    left: 190px;
-}
-
-.arrow {
-  position: relative;
-  bottom: -340px;
-  left: -70px;
-}
-
-.info .glitch {
-  top: 150px;
-  left: 680px;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.glitch {
-      color: white;
-      margin: 0 auto;
-      width: 800px;
-    }
-    
-    /* Real glitch effect */
-    .glitch {
-      position: absolute;
-    }
-    
-    .glitch:after {
-      animation: glitch-animation 2s infinite linear alternate-reverse;
-      background: black;
-      clip: rect( 0, 900px, 0, 0 );
-      color: white;
-      content: attr( data-text );
-      left: 2px;
-      overflow: hidden;
-      position: absolute;
-      text-shadow: -1px 0 red;
-      top: 0;
-    }
-
-    .glitch:before {
-      animation: glitch-animation-2 3s infinite linear alternate-reverse;
-      background: black;
-      clip: rect( 0, 900px, 0, 0 );
-      color: white;
-      content: attr( data-text );
-      left: -2px;
-      overflow: hidden;
-      position: absolute;
-      text-shadow: 1px 0 blue;
-      top: 0;
-    }
-
-.twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-      overflow: hidden;
-
-  z-index:1;
-  animation:move-twink-back 500s linear infinite;
-}
-
-.solarsystem {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.sun {
-  height: 100px;
-  width: 100px;
-  background-color: orangered;
-  box-shadow:0 0 20px orangered;
-  border-radius: 50%;
-  z-index: 10;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: pulse 2s infinite;
-}
-
-.planet {
-    height: 15px;
-    width: 15px;
-    background-color: #ccc;
-    border-radius: 50%;
-    z-index: 15;
-    position: absolute;
-
-    }
-
-.planet1 {
-    height: 5px;
-    width: 5px;
-    background-color: slategray;
-    transform: translateX(100px);
-    animation: orbit1 7.2s linear infinite;
-    }
-
-.planet2 {
-    height: 7px;
-    width: 7px;
-    transform: translateX(110px);
-    background-color: palegoldenrod;
-    animation: orbit2 7s linear infinite;
-    }
- 
-.planet3 {
-    width: 8px;
-    height: 8px;
-    transform: translateX(120px);
-    background-color: dodgerblue;
-    animation: orbit3 7.9s linear infinite;
-    }
-
-.planet4 {
-    width: 6px;
-    height: 6px;
-    transform: translateX(140px);
-    background-color: red;
-    animation: orbit4 8.7s linear infinite;
-    }
-
-.planet5 {
-    width: 12px;
-    height: 12px;
-    transform: translateX(200px);
-    background-color: beige;
-    animation: orbit5 10s linear infinite;
-    }
-
-.planet6 {
-    width: 11px;
-    height: 11px;
-    transform: translateX(250px);
-    background-color: lightyellow;
-    animation: orbit6 10.2s linear infinite;
-    }
-
-.planet7 {
-    width: 10px;
-    height: 10px;
-    transform: translateX(300px);
-    background-color: aqua;
-    animation: orbit7 10s linear infinite;
-    }
-
-.planet8 {
-    width: 9px;
-    height: 9px;
-    transform: translateX(350px);
-    background-color: skyblue;
-    animation: orbit8 11s linear infinite;
-    }
-
-.planet9 {
-    width: 4px;
-    height: 4px;
-    transform: translateX(400px);
-    background-color: burlywood;
-    animation: orbit9 12s linear infinite;
-    } 
-
-}
-    
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<div class="twinkling">
-  <div class="solarsystem">
-    <div class="sun pulse">
-      <div class="planet planet1"></div>
-      <div class="planet planet2"></div>
-      <div class="planet planet3"></div>
-      <div class="planet planet4"></div>
-      <div class="planet planet5"></div>
-      <div class="planet planet6"></div>
-      <div class="planet planet7"></div>
-      <div class="planet planet8"></div>
-      <div class="planet planet9"></div>
+  <div class="twinkling">
+<!-- COVER BEGINS -->
+    <div class="solarsystem">
+      <div class="sun pulse">
+        <div class="planet planet1"></div>
+        <div class="planet planet2"></div>
+        <div class="planet planet3"></div>
+        <div class="planet planet4"></div>
+        <div class="planet planet5"></div>
+        <div class="planet planet6"></div>
+        <div class="planet planet7"></div>
+        <div class="planet planet8"></div>
+        <div class="planet planet9"></div>
+      </div>
+      <div class="text">
+        <h1 class="glitch" data-text="which planet are you from?">which planet are you from?</h1>
+        <h2>take this <a href="#">QUIZ</a> &amp; find out</h2>
+      </div>
+      <div class="arrow">
+        <h1><a href="#">⇣</a></h1>
+      </div>
     </div>
-    <div class="text">
-      <h1 class="glitch" data-text="which planet are you from?">which planet are you from?</h1>
-      <h2>take the <a href="#">quiz</a> &amp; find out</h2>
+  <!-- COVER ENDS -->
+
+  <!-- QUESTIONS BEGIN -->
+    <div class="quizQuestion quizQuestion1">
+      <h1>Q1</h1>
+      <h2>What's your favourite type of weather?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+        
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+        
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
     </div>
-    <div class="arrow">
-    <h1><a href="#">⇣</a></h1>
-  </div>
-</div>
 
-  <div class="quizQuestion quizQuestion1">
-    <h1>Question 1</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
+    <div class="quizQuestion quizQuestion2">
+      <h1>Q2</h1>
+      <h2>What do you like to wear?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion3">
+      <h1>Q3</h1>
+      <h2>Out of these, what would you rather do?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion4">
+      <h1>Q4</h1>
+      <h2>Out of these, which is the most valuable characteristic?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion5">
+      <h1>Q5</h1>
+      <h2>What do you notice first about a room?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion6">
+      <h1>Q6</h1>
+      <h2>In a group project, you are most likely to..</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion7">
+      <h1>Q7</h1>
+      <h2>Which is your favourite subject?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion8">
+      <h1>Q8</h1>
+      <h2>Do you believe in ghosts?</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+    <div class="quizQuestion quizQuestion9">
+      <h1>Q9</h1>
+      <h2>Favourite genre of music is..</h2>
+      <form>
+        <input type="radio" id="lethargic" name="feeling" value="lethargic">
+        <label for="lethargic">lethargic / depressed</label>
+    
+        <br>
+        <input type="radio" id="anxious" name="feeling" value="anxious">
+        <label for="anxious">anxious / scattered</label>
+    
+        <br>
+        <input type="radio" id="stressed" name="feeling" value="stressed">
+        <label for="stressed">stressed / wired</label>
+      </form>
+    </div>
+
+      <div class="quizQuestion quizQuestion9">
+        <h1>Q9</h1>
+        <h2>Biggest pet peeve?</h2>
+        <form>
+          <input type="radio" id="lethargic" name="feeling" value="lethargic">
+          <label for="lethargic">lethargic / depressed</label>
       
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
+          <br>
+          <input type="radio" id="anxious" name="feeling" value="anxious">
+          <label for="anxious">anxious / scattered</label>
       
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
+          <br>
+          <input type="radio" id="stressed" name="feeling" value="stressed">
+          <label for="stressed">stressed / wired</label>
+        </form>
+      </div>
+<!-- QUESTIONS ENDS -->
 
-  <div class="quizQuestion quizQuestion2">
-    <h1>Question 2</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion3">
-    <h1>Question 3</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion4">
-    <h1>Question 4</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion5">
-    <h1>Question 5</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion6">
-    <h1>Question 6</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion7">
-    <h1>Question 7</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion8">
-    <h1>Question 8</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="quizQuestion quizQuestion9">
-    <h1>Question 9</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</h2>
-    <form>
-      <input type="radio" id="lethargic" name="feeling" value="lethargic">
-      <label for="lethargic">lethargic / depressed</label>
-  
-      <br>
-      <input type="radio" id="anxious" name="feeling" value="anxious">
-      <label for="anxious">anxious / scattered</label>
-  
-      <br>
-      <input type="radio" id="stressed" name="feeling" value="stressed">
-      <label for="stressed">stressed / wired</label>
-    </form>
-  </div>
-
-  <div class="solarsystemText">
-    <div class="images">
-    <img src="kisspng-messenger-earth-mercury-planet-solar-system-mercury-5add31243c27e4.5383357515244454762464.png" class="">
-  </div>
-
-  <div class="info">
-    <h1 class="glitch" data-text="Mercury ☿️">Mercury ☿️</h1>
-    <h2>Mind / Communication / Intellect / Reason / Language</h2>
-    <ul>
-        <li>the entrepreneur, innovator &amp;  storyteller.</li>
-        <li>sarcastic, quick witted and fast learners</li>
-        <li>+ curious, communicative, and adaptable</li>
-        <li>- indecisive, critical, and anxious</li>
-    </ul> 
-  </div>
-  </div>
-
+<!-- RESULTS BEGIN -->
     <div class="solarsystemText">
       <div class="images">
-        <img src="kisspng-earth-venus-planet-solar-system-atmosphere-venus-png-transparent-image-5a77f016078656.4839685215178096860308.png" class="">
+      <img src="images/mercury.png" class="">
+    </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Mercury ☿️">Mercury ☿️</h1>
+        <h2>Mind / Communication / Intellect / Reason / Language</h2>
+        <ul>
+            <li>the entrepreneur, innovator &amp;  storyteller.</li>
+            <li>sarcastic, quick witted and fast learners</li>
+            <li>+ curious, communicative, and adaptable</li>
+            <li>- indecisive, critical, and anxious</li>
+        </ul> 
       </div>
-    
+    </div>
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/venus.png" class="">
+      </div>
       <div class="info">
         <h1 class="glitch" data-text="Venus ♀">Venus ♀</h1>
         <h2>Love / Beauty / Harmony / Balance / Art</h2>
@@ -748,138 +238,119 @@ img {
       </div>
     </div>
 
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="kisspng-earth-t-shirt-planet-earth-5a73c65023d9e4.1414160615175368481469.png"
-                class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Earth ⊕">Earth ⊕</h1>
-              <h2>Strength / Dependability / Pragmatism / Common Sense </h2>
-              <ul>
-                <li>responsible, diligent, pragmatic, no-nonsense approach to life</li>
-                <li>commited and methodical</li>
-                <li>+ patience, tolerance, dedication</li>
-                <li>- rigidity, overplanning, materialism</li>
-              </ul>
-            </div>
-          </div>
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/earth.png"
+          class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Earth ⊕">Earth ⊕</h1>
+        <h2>Strength / Dependability / Pragmatism / Common Sense </h2>
+        <ul>
+          <li>responsible, diligent, pragmatic, no-nonsense approach to life</li>
+          <li>commited and methodical</li>
+          <li>+ patience, tolerance, dedication</li>
+          <li>- rigidity, overplanning, materialism</li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="kisspng-earth-terrestrial-planet-mars-solar-system-mars-5ac03a418782c6.3952181115225472655551.png" class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Mars ♂">Mars ♂</h1>
-              <h2>Passion / Energy / Courage / Vitality</h2>
-              <ul>
-                <li>enterprising, activating, powerful</li>
-                <li>dynamic, athletic, ambitious</li>
-                <li>+ adventurous, sincere, straightforward</li>
-                <li>- reckless, aggressive, egocentric</li>
-              </ul>
-            </div>
-          </div>
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/mars.png" class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Mars ♂">Mars ♂</h1>
+        <h2>Passion / Energy / Courage / Vitality</h2>
+        <ul>
+          <li>enterprising, activating, powerful</li>
+          <li>dynamic, athletic, ambitious</li>
+          <li>+ adventurous, sincere, straightforward</li>
+          <li>- reckless, aggressive, egocentric</li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/jupiter.png" class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Jupiter ♃">Jupiter ♃</h1>
+        <h2>Generous / Enthusiastic / Discerning / Philosophical</h2>
+        <ul>
+          <li>authority and knowledge</li>
+          <li>growth, scientific insight and prosperity</li>
+          <li>+ humane, fair, dutiful, optimistic</li>
+          <li>- risktaking, wastefulness, greediness</li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="jupiter.png" class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Jupiter ♃">Jupiter ♃</h1>
-              <h2>Generous / Enthusiastic / Discerning / Philosophical</h2>
-              <ul>
-                <li>authority and knowledge</li>
-                <li>growth, scientific insight and prosperity</li>
-                <li>+ humane, fair, dutiful, optimistic</li>
-                <li>- risktaking, wastefulness, greediness</li>
-              </ul>
-            </div>
-          </div>
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/saturn.png" class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Saturn ♄">Saturn ♄</h1>
+        <h2>Patience / Concentration / Minimalism / Justice</h2>
+        <ul>
+          <li>stoic, thoughtful, analytic</li>
+          <li>sophistication, luxury, elegance</li>
+          <li>+ thoroughness, integrity, tenaciousness</li>
+          <li>- pessimism, stubborness, depressive</li>
+        </ul>
+      </div>
+    </div>
+      
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/uranus.png" class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Uranus ⛢">Uranus ⛢</h1>
+        <h2>Altruism / Original / Creative / Independent</h2>
+        <ul>
+          <li>innovative, revolutionary, sensitive</li>
+          <li>drawn to the occult and paranormal</li>
+          <li>+ balanced and inspired, unique, in tune</li>
+          <li>- moody, hypersensitive, distractable</li>
+        </ul>
+      </div>
+    </div>
 
-
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="kisspng-earth-saturn-planet-solar-system-ring-system-jupiter-5abf6c2925c740.6647840515224945051548.png" class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Saturn ♄">Saturn ♄</h1>
-              <h2>Patience / Concentration / Minimalism / Justice</h2>
-              <ul>
-                <li>stoic, thoughtful, analytic</li>
-                <li>sophistication, luxury, elegance</li>
-                <li>+ thoroughness, integrity, tenaciousness</li>
-                <li>- pessimism, stubborness, depressive</li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="uranus.png" class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Uranus ⛢">Uranus ⛢</h1>
-              <h2>Altruism / Original / Creative / Independent</h2>
-              <ul>
-                <li>innovative, revolutionary, sensitive</li>
-                <li>drawn to the occult and paranormal</li>
-                <li>+ balanced and inspired, unique, in tune</li>
-                <li>- moody, hypersensitive, distractable</li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="neptune.png" alt="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Neptune ♆">Neptune ♆</h1>
-              <h2>Spirituality / Magic / Empathy / Intuition</h2>
-              <ul>
-                <li>drawn to non-material realm</li>
-                <li>deeply in tune with emotions of self and others</li>
-                <li>+ humility, compassion, emotional wisdom</li>
-                <li>- escapism, melodrama, lethargy</li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div class="solarsystemText">
-            <div class="images">
-              <img src="kisspng-new-horizons-kuiper-belt-science-pluto-planet-pluto-5ac94a79801527.9531885215231412415246.png" class="">
-            </div>
-          
-            <div class="info">
-              <h1 class="glitch" data-text="Pluto ♇">Pluto ♇</h1>
-              <h2>Depth / Creative Inspiration / Self Analysis / Truth</h2>
-              <ul>
-                <li>study of self, others, the subconscious and healing</li>
-                <li>dedicated to discovering truth and fighting for it</li>
-                <li>+ revolutionary, practical intelligence, deep and intense interests</li>
-                <li>- possessive, jealous, power hunger</li>
-              </ul>
-            </div>
-          </div>
-
-  
-
-
-
-
-
-
-</div>
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/neptune.png" alt="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Neptune ♆">Neptune ♆</h1>
+        <h2>Spirituality / Magic / Empathy / Intuition</h2>
+        <ul>
+          <li>drawn to non-material realm</li>
+          <li>deeply in tune with emotions of self and others</li>
+          <li>+ humility, compassion, emotional wisdom</li>
+          <li>- escapism, melodrama, lethargy</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="solarsystemText">
+      <div class="images">
+        <img src="images/pluto.png" class="">
+      </div>
+      <div class="info">
+        <h1 class="glitch" data-text="Pluto ♇">Pluto ♇</h1>
+        <h2>Depth / Creative Inspiration / Self Analysis / Truth</h2>
+        <ul>
+          <li>study of self, others, the subconscious and healing</li>
+          <li>dedicated to discovering truth and fighting for it</li>
+          <li>+ revolutionary, practical intelligence, deep and intense interests</li>
+          <li>- possessive, jealous, power hunger</li>
+        </ul>
+      </div>
+    </div>
+<!-- RESULTS END -->
+  </div>
 </body>
 </html>
