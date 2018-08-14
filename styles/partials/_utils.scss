@@ -1,15 +1,3 @@
-form {
-  text-align: left;
-  margin-left: 480px;
-  margin-top: 50px;
-}
-
-label {
-  color: white;
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-}
-
 img {
   width: 100%;
 }
@@ -25,3 +13,6 @@ img {
   animation-iteration-count: infinite;
 }
 
+.hide {
+  display: none;
+}

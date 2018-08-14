@@ -1,11 +1,8 @@
 h1 {
     font-family: 'VT323', monospace;
-    z-index: 15;
-    font-size: 40px;
+    font-size: 6vw;
+    margin: 0;
     color: white;
-    margin: 20px 0;
-    left: 300px;
-    bottom: 30px;
 }
 
 .solarsystemText h1 {
@@ -15,15 +12,10 @@ h1 {
 
 h2 {
   font-family: 'VT323', monospace;
-  font-size: 25px;
+  font-size: 3.5vw;
+  margin: 2% 0;
   color: white;
-  margin: 5px 0;
-}
-
-.text h2 {
-  left: -210px;
-  top: 15px;
-  position: relative;
+  z-index: 15;
 }
 
 p, ul li {
@@ -33,11 +25,12 @@ p, ul li {
 }
 
 a {
-  color: greenyellow;
+  color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
 a:hover {
-  color: grey;
+  color: #F1FA8B;
 } 
 

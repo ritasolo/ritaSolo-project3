@@ -132,16 +132,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-form {
-  text-align: left;
-  margin-left: 480px;
-  margin-top: 50px; }
-
-label {
-  color: white;
-  font-family: 'VT323', monospace;
-  font-size: 20px; }
-
 img {
   width: 100%; }
 
@@ -157,14 +147,14 @@ img {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
+.hide {
+  display: none; }
+
 h1 {
   font-family: 'VT323', monospace;
-  z-index: 15;
-  font-size: 40px;
-  color: white;
-  margin: 20px 0;
-  left: 300px;
-  bottom: 30px; }
+  font-size: 6vw;
+  margin: 0;
+  color: white; }
 
 .solarsystemText h1 {
   margin: 0;
@@ -172,14 +162,10 @@ h1 {
 
 h2 {
   font-family: 'VT323', monospace;
-  font-size: 25px;
+  font-size: 3.5vw;
+  margin: 2% 0;
   color: white;
-  margin: 5px 0; }
-
-.text h2 {
-  left: -210px;
-  top: 15px;
-  position: relative; }
+  z-index: 15; }
 
 p, ul li {
   font-family: 'VT323', monospace;
@@ -187,11 +173,12 @@ p, ul li {
   font-size: 25px; }
 
 a {
-  color: greenyellow;
-  text-decoration: none; }
+  color: #fff;
+  text-decoration: none;
+  padding: 10px; }
 
 a:hover {
-  color: grey; }
+  color: #F1FA8B; }
 
 @keyframes move-twink-back {
   from {
@@ -590,7 +577,10 @@ body {
     text-align: center;
     padding: 100px 0; }
   body .solarsystemText {
-    width: 80%;
+    width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 0 auto;
     padding: 100px 0;
     position: relative;
@@ -607,26 +597,35 @@ body {
   body .symbol {
     position: relative; }
   body .solarsystemText .images {
-    width: 40%;
+    width: 30%;
     -webkit-animation: pulse2 5s infinite;
     animation: pulse2 5s infinite; }
   body .solarsystemText .info {
     padding: 20px; }
   body .text {
-    width: 100vw;
     position: absolute;
+    margin: 50px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100vw;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    top: 190px;
-    left: 190px; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   body .arrow {
+    text-align: center;
     position: relative;
-    bottom: -340px;
-    left: -70px; }
+    top: -20vh; }
+    body .arrow h1 {
+      margin: 0;
+      font-size: 10vh; }
   body .info .glitch {
     top: 150px;
     left: 680px; }
@@ -642,13 +641,18 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
   body .glitch {
+    position: relative;
     color: white;
-    margin: 0 auto;
-    width: 800px; }
-  body .glitch {
-    position: absolute; }
+    left: 8%;
+    width: 80%; }
+  body a.whiteOut {
+    color: black;
+    background-color: white;
+    padding: 2px 8px; }
+    body a.whiteOut:hover {
+      background-color: #F1FA8B; }
   body .glitch:after {
-    animation: glitch-animation 2s infinite linear alternate-reverse;
+    animation: glitch-animation 26s infinite linear alternate-reverse;
     background: black;
     clip: rect(0, 900px, 0, 0);
     color: white;
@@ -659,7 +663,7 @@ body {
     text-shadow: -1px 0 red;
     top: 0; }
   body .glitch:before {
-    animation: glitch-animation-2 3s infinite linear alternate-reverse;
+    animation: glitch-animation-2 26s infinite linear alternate-reverse;
     background: black;
     clip: rect(0, 900px, 0, 0);
     color: white;
@@ -741,6 +745,7 @@ body {
   body .planet3 {
     width: 8px;
     height: 8px;
+    position: relative;
     -webkit-transform: translateX(120px);
     -ms-transform: translateX(120px);
     transform: translateX(120px);
@@ -801,3 +806,49 @@ body {
     background-color: burlywood;
     -webkit-animation: orbit9 12s linear infinite;
     animation: orbit9 12s linear infinite; }
+  body .question {
+    margin-top: 150px; }
+  body header {
+    z-index: 20; }
+  body form {
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+    z-index: 25;
+    position: relative;
+    top: -32vw;
+    overflow-y: hidden; }
+  body fieldset h2 {
+    background-color: white;
+    margin: 4px 0;
+    font-size: 2.5vw;
+    color: black;
+    padding: 4px 8px;
+    display: inline-block; }
+  body fieldset {
+    border: 0;
+    text-align: left; }
+    body fieldset h2:last-of-type {
+      margin-bottom: 4%; }
+  body label {
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 2vw; }
+    body label h2 {
+      font-size: 2vw;
+      padding: 0; }
+  body input[type="radio"] {
+    display: none; }
+  body input[type="radio"] + label {
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 4vw;
+    padding: 5px 10px; }
+  body input[type="radio"]:checked + label {
+    background-color: black;
+    color: white; }
+  body i {
+    font-size: 2.5vw;
+    position: relative;
+    top: -0.5vw; }
