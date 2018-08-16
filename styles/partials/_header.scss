@@ -1,0 +1,116 @@
+header {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 5fr 1fr;
+
+        .solarsystem {
+            display: grid;
+            grid-column: 1 / -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            align-items: center;
+            justify-items: center;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sun {
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            box-shadow:0 0 20px orangered;
+            border-radius: 50%;
+            z-index: 10;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: pulse 2s infinite;
+        }
+
+        .planet {
+            height: 15px;
+            width: 15px;
+            background-color: #ccc;
+            border-radius: 50%;
+            z-index: 15;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .planet1 {
+            height: 5px;
+            width: 5px;
+            background-color: slategray;
+            transform: translateX(100px);
+            animation: orbit1 7.2s linear infinite;
+        }
+
+        .planet2 {
+            height: 7px;
+            width: 7px;
+            transform: translateX(110px);
+            background-color: palegoldenrod;
+            animation: orbit2 7s linear infinite;
+        }
+
+        .planet3 {
+            width: 8px;
+            height: 8px;
+            position: relative;
+            transform: translateX(120px);
+            background-color: dodgerblue;
+            animation: orbit3 7.9s linear infinite;
+        }
+
+        .planet4 {
+            width: 6px;
+            height: 6px;
+            transform: translateX(140px);
+            background-color: red;
+            animation: orbit4 8.7s linear infinite;
+        }
+
+        .planet5 {
+            width: 12px;
+            height: 12px;
+            transform: translateX(200px);
+            background-color: beige;
+            animation: orbit5 10s linear infinite;
+        }
+
+        .planet6 {
+            width: 11px;
+            height: 11px;
+            transform: translateX(250px);
+            background-color: lightyellow;
+            animation: orbit6 10.2s linear infinite;
+        }
+
+        .planet7 {
+            width: 10px;
+            height: 10px;
+            transform: translateX(300px);
+            background-color: aqua;
+            animation: orbit7 10s linear infinite;
+        }
+
+        .planet8 {
+            width: 9px;
+            height: 9px;
+            transform: translateX(350px);
+            background-color: skyblue;
+            animation: orbit8 11s linear infinite;
+        }
+
+        .planet9 {
+            width: 4px;
+            height: 4px;
+            transform: translateX(400px);
+            background-color: burlywood;
+            animation: orbit9 12s linear infinite;
+        } 
+}

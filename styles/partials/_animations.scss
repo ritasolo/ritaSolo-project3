@@ -15,6 +15,20 @@
     to {background-position:-10000px 5000px;}
 }
 
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(100px, 0);
+  }
+  
+  80% {
+    transform: translate(0px, 0);
+  }
+}
+
 @keyframes orbit1 {
 	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
 	to   {  transform: rotate(360deg) translateX(100px) rotate(-300deg); }

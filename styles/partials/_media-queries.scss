@@ -1,0 +1,35 @@
+
+@media only screen and (max-width: 680px) {
+    form {
+        width: 80%;
+    }
+    .solarsystem-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        top: 0;
+        ul {
+            padding-bottom: 3rem;
+        }
+        li {
+            margin: 1.5rem 0;
+        }
+        .glitch {
+            left: 25%;
+        }
+    }
+
+    .images {
+        margin: 0;
+        width: 100%;
+    }
+
+     .solarsystem-text {
+        position: relative;
+    }
+
+    .glitch.you-are {
+        display: none;
+    }
+}

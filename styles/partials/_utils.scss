@@ -8,9 +8,21 @@ img {
 }
 
 .pulse2 {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
+  -webkit-animation-name: pulse2;
+  border: 1px solid red;
+  animation-name: pulse2;
   animation-iteration-count: infinite;
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.nudge {
+  animation: nudge 6s linear infinite alternate;
 }
 
 .hide {
@@ -20,3 +32,10 @@ img {
 .flex {
   display: flex;
 }
+
+.twinkling {
+            background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+            height: 90vh;
+            z-index:1;
+            animation:move-twink-back 500s linear infinite;
+        }

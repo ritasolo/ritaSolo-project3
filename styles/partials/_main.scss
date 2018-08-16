@@ -3,11 +3,6 @@ body {
     z-index:0;
     overflow-x: hidden;
     font-size: 62.5%;
-    header {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 5fr 1fr;
-    }
 
     .images {
         margin-right: 50px;
@@ -19,28 +14,6 @@ body {
         position: relative;
     }
 
-     .solarsystem-text {
-        width: 70vw;
-        justify-content: center;
-        margin: 0 auto;
-        position: relative;
-        top: 25vh;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 30px;
-    }
-
-    .solarsystem-text .images {
-        width: 70%;
-        animation: pulse2 5s infinite;
-    } 
-
-    .solarsystemText .info {
-        padding: 20px;
-        width: 80%;
-    }
-
     .text { 
         position: absolute;
         z-index: 25;
@@ -50,7 +23,7 @@ body {
 
     .info {
         display: flex;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         flex-direction: column;
         h2:first-of-type {
@@ -66,14 +39,15 @@ body {
         width: 100%;
     }
 
-    .glitch.you-are {
-        top: 7vh;
+    .glitch.you-are::before,
+    .glitch.you-are::after {
+        color: #F1FA8B;
     }
 
     .info .glitch {
         position: relative;
         top: 0;
-        font-size: 7vw;
+        font-size: 3rem;
         margin: 1vw 0;
     }
 
@@ -94,7 +68,7 @@ body {
         background-color: #F1FA8B;
         padding: 2px 8px;
         &:hover {
-            background-color: white;;
+            background-color: white;
         }
     }
 
@@ -124,239 +98,4 @@ body {
         text-shadow: 1px 0 blue;
         top: 0;
     }
-
-    .twinkling {
-        background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-        height: 90vh;
-        z-index:1;
-        animation:move-twink-back 500s linear infinite;
-    }
-
-    .solarsystem {
-        // position: relative;
-        display: grid;
-        grid-column: 1 / -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        justify-items: center;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .sun {
-        height: 100px;
-        width: 100px;
-        background-color: orangered;
-        box-shadow:0 0 20px orangered;
-        border-radius: 50%;
-        z-index: 10;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: pulse 2s infinite;
-    }
-
-    .planet {
-        height: 15px;
-        width: 15px;
-        background-color: #ccc;
-        border-radius: 50%;
-        z-index: 15;
-        overflow: hidden;
-        position: absolute;
-    }
-
-    .planet1 {
-        height: 5px;
-        width: 5px;
-        background-color: slategray;
-        transform: translateX(100px);
-        animation: orbit1 7.2s linear infinite;
-    }
-
-    .planet2 {
-        height: 7px;
-        width: 7px;
-        transform: translateX(110px);
-        background-color: palegoldenrod;
-        animation: orbit2 7s linear infinite;
-    }
-
-    .planet3 {
-        width: 8px;
-        height: 8px;
-        position: relative;
-        transform: translateX(120px);
-        background-color: dodgerblue;
-        animation: orbit3 7.9s linear infinite;
-    }
-
-    .planet4 {
-        width: 6px;
-        height: 6px;
-        transform: translateX(140px);
-        background-color: red;
-        animation: orbit4 8.7s linear infinite;
-    }
-
-    .planet5 {
-        width: 12px;
-        height: 12px;
-        transform: translateX(200px);
-        background-color: beige;
-        animation: orbit5 10s linear infinite;
-    }
-
-    .planet6 {
-        width: 11px;
-        height: 11px;
-        transform: translateX(250px);
-        background-color: lightyellow;
-        animation: orbit6 10.2s linear infinite;
-    }
-
-    .planet7 {
-        width: 10px;
-        height: 10px;
-        transform: translateX(300px);
-        background-color: aqua;
-        animation: orbit7 10s linear infinite;
-    }
-
-    .planet8 {
-        width: 9px;
-        height: 9px;
-        transform: translateX(350px);
-        background-color: skyblue;
-        animation: orbit8 11s linear infinite;
-    }
-
-    .planet9 {
-        width: 4px;
-        height: 4px;
-        transform: translateX(400px);
-        background-color: burlywood;
-        animation: orbit9 12s linear infinite;
-    } 
-
-    form {
-        text-align: center;
-        margin: 0 auto;
-        width: 100vw;
-        z-index: 25;
-        position: absolute;
-        bottom: 3%;
-        left: 5%;
-        overflow: hidden;
-    }
-
-    fieldset h2 {
-        background-color: white;
-        margin: 4px 0;
-        font-size: 3.5vh;
-        color: black;
-        padding: 4px 8px;
-        display: inline-block;
-    }
-
-    fieldset {
-        border: 0;
-        text-align: left;
-        h2:last-of-type {
-            margin-bottom: 2%;
-            background-color: #F1FA8B;
-        }
-        img {
-            width: 50px;
-            position: relative;
-            top: 10px;
-            left: 10px;
-        }
-    }
-
-    label {
-        color: white;
-        font-family: 'VT323', monospace;
-        font-size: 3.5vh;
-        h2 {
-            font-size: 3.5vh;
-            padding: 0;
-        }
-    }
-
-    input[type="radio"]{
-        display: none;
-    }  
-
-    input[type="radio"] + label{
-        font-size: 3.5vh;
-        background-color: white;
-        color: black;
-        letter-spacing: 1px;
-        line-height: 3rem;
-        padding: 5px 10px;
-    }
-
-    input[type="submit"] {
-        background-color: white;
-        border: 0;
-        font-family: 'VT323', monospace;
-        position: relative;
-        color: black;
-        letter-spacing: 1px;
-        font-size: 2rem;
-        line-height: 4vw;
-        padding: 20px 10px;
-        z-index: 30;
-        left: -5.5%;
-        margin-bottom: 5%;
-    }
-
-    input[type="radio"]:checked + label{
-        background-color: black;
-        color: white;
-    } 
-
-    i {
-        font-size: 2.5vw;
-        position: relative;
-        top: -0.5vw;
-    }
-}
-
-@media only screen and (max-width: 670px) {
-    .solarsystem-text {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        ul {
-            margin-top: 3rem;
-            padding-bottom: 3rem;
-        }
-    }
-
-    .images {
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .glitch.you-are {
-        position: relative;
-        color: white;
-        left: 15%;
-        top: 5vh;
-        width: 100%;
-    }
-
-     .solarsystem-text {
-        position: relative;
-        top: -10rem;
-    }
-
 }

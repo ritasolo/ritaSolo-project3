@@ -1,0 +1,83 @@
+    form {
+        text-align: center;
+        margin: 0 auto;
+        width: 100vw;
+        z-index: 25;
+        position: absolute;
+        bottom: 3%;
+        left: 15%;
+        overflow: hidden;
+    }
+
+    fieldset h2 {
+        background-color: white;
+        margin: 4px 0;
+        font-size: 3.5vh;
+        color: black;
+        padding: 4px 8px;
+        display: inline-block;
+    }
+
+    fieldset {
+        border: 0;
+        text-align: left;
+        h2:last-of-type {
+            margin-bottom: 2%;
+            background-color: #F1FA8B;
+        }
+        img {
+            width: 50px;
+            position: relative;
+            top: 22px;
+            left: 10px;
+        }
+    }
+
+    label {
+        color: white;
+        font-family: 'VT323', monospace;
+        font-size: 3.5vh;
+        h2 {
+            font-size: 3.5vh;
+            padding: 0;
+        }
+    }
+
+    input[type="radio"]{
+        display: none;
+    }  
+
+    input[type="radio"] + label{
+        font-size: 3.5vh;
+        background-color: white;
+        color: black;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        padding: 5px 10px;
+    }
+
+    input[type="submit"] {
+        background-color: white;
+        border: 0;
+        font-family: 'VT323', monospace;
+        position: relative;
+        color: black;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        line-height: 4vw;
+        padding: 20px 10px;
+        z-index: 30;
+        left: -15%;
+        margin-bottom: 5%;
+    }
+
+    input[type=submit]:active {
+        background-color: #000;
+        color: white;
+        outline: 0;
+    }
+
+    input[type="radio"]:checked + label{
+        background-color: black;
+        color: white;
+    } 

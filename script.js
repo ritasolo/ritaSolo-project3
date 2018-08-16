@@ -109,9 +109,8 @@ $(function () {
             500);
     });
 
-    $('form').on('submit', function (e) {
-        e.preventDefault();
-
+    $('input[type="submit"]').click(function (e) {
+        e.preventDefault(); 
         function count(arr) {
             return arr.sort((a, b) =>
                 arr.filter(value => value === a).length 
@@ -125,7 +124,6 @@ $(function () {
                     - arr.filter(function (v) { return v === b }).length
             }).pop();
         }
-
 
         let userAnswer = count(planetArray);
         console.log(`you got ${userAnswer}`);
