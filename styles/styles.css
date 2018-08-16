@@ -765,20 +765,6 @@ body {
     z-index: 25;
     width: 100%;
     grid: 2 / 3; }
-  body .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    body .info h2:first-of-type {
-      margin: 0; }
   body .glitch {
     position: relative;
     color: white;
@@ -794,8 +780,7 @@ body {
     font-size: 3rem;
     margin: 1vw 0; }
   body .info h2 {
-    font-size: 2rem;
-    text-align: center; }
+    font-size: 2rem; }
   body .take-quiz {
     position: relative;
     bottom: -65vh;
@@ -881,7 +866,8 @@ input[type="radio"] + label {
   line-height: 3rem;
   padding: 5px 10px; }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: white;
   border: 0;
   font-family: 'VT323', monospace;
@@ -890,12 +876,13 @@ input[type="submit"] {
   letter-spacing: 1px;
   font-size: 2rem;
   line-height: 4vw;
-  padding: 20px 10px;
+  padding: 10px 10px;
   z-index: 30;
   left: -15%;
   margin-bottom: 5%; }
 
-input[type=submit]:active {
+input[type=submit]:active,
+input[type=reset]:active {
   background-color: #000;
   color: white;
   outline: 0; }
@@ -904,24 +891,25 @@ input[type="radio"]:checked + label {
   background-color: black;
   color: white; }
 
-h1 {
-  margin: 0; }
-
-.quizAnswers h2 {
-  border: 1px solid red; }
-
-.glitch.you-are {
-  top: 10rem;
-  position: relative;
-  font-size: 6vw;
-  color: #F1FA8B;
-  left: 40%; }
+.info {
+  text-align: left;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .solarsystem-text {
   width: 80vw;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   margin: 0 auto;
   position: relative;
   height: 100vh;
@@ -929,11 +917,24 @@ h1 {
   left: 0;
   right: 0;
   z-index: 30px; }
-
-.solarsystem-text .images {
-  width: 50%;
-  -webkit-animation: pulse2 5s infinite;
-  animation: pulse2 5s infinite; }
+  .solarsystem-text ul {
+    margin-bottom: 2rem; }
+  .solarsystem-text h1 {
+    color: #F1FA8B;
+    font-size: 4vh; }
+  .solarsystem-text .glitch {
+    left: 28%; }
+  .solarsystem-text .images {
+    width: 40%;
+    top: -2rem;
+    left: 1rem;
+    position: relative;
+    -webkit-animation: pulse2 5s infinite;
+    animation: pulse2 5s infinite; }
+  .solarsystem-text h2 {
+    text-align: center; }
+  .solarsystem-text input[type="reset"] {
+    left: -7%; }
 
 @media only screen and (max-width: 680px) {
   form {
@@ -954,13 +955,14 @@ h1 {
     .solarsystem-text ul {
       padding-bottom: 3rem; }
     .solarsystem-text li {
-      margin: 1.5rem 0; }
+      margin: 0.2rem 0; }
     .solarsystem-text .glitch {
-      left: 25%; }
-  .images {
-    margin: 0;
-    width: 100%; }
+      left: 29%; }
+    .solarsystem-text input[type=reset] {
+      left: 0.2rem; }
   .solarsystem-text {
     position: relative; }
   .glitch.you-are {
-    display: none; } }
+    display: none; }
+  input[type="submit"] {
+    left: -8%; } }

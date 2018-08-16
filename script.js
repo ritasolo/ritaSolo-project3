@@ -132,6 +132,11 @@ $(function () {
         $('.solarsystem').hide(); 
         $('.title').hide();
         $('.you-are').removeClass('hide');
+        $('input[type=reset]').removeClass('hide');
     })
+    $('input[type=reset]').click(function() {
+        location.reload();
+    });
+
 
 });

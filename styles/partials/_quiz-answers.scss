@@ -1,24 +1,16 @@
-     h1{
-        margin: 0;
-        // line-height: 0;
-        // border: 1px solid red;
-     }
+    
 
-     .quizAnswers h2 {
-         border: 1px solid red;
+     .info {
+         text-align: left;
+         margin: 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
      }
-
-     .glitch.you-are {
-        top: 10rem;
-        position: relative;
-        font-size: 6vw;
-        color: #F1FA8B;
-        left: 40%;
-    }
      
      .solarsystem-text {
         width: 80vw;
-        justify-content: center;
         margin: 0 auto;
         position: relative;
         height: 100vh;
@@ -26,9 +18,29 @@
         left: 0;
         right: 0;
         z-index: 30px;
+        ul {
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: #F1FA8B;
+            font-size: 4vh;
+        }
+        .glitch {
+            left: 28%;
+        }
+        .images {
+            width: 40%;
+            top: -2rem;
+            left: 1rem;
+            position: relative;
+            animation: pulse2 5s infinite;
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="reset"] {
+            left: -7%;
+        }
     }
 
-    .solarsystem-text .images {
-        width: 50%;
-        animation: pulse2 5s infinite;
-    } 
+   
