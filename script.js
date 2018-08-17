@@ -6,6 +6,17 @@ let planets;
 $(function () {
     console.log('ready!')
     // let planetClasses;
+    $('.play-button').click(function() {
+        $("#audio1")[0].pause();
+        $(this).addClass('hide');
+        $('.pause-button').removeClass('hide');
+    });
+    $('.pause-button').click(function () {
+        $("#audio1")[0].play();
+        $(this).addClass('hide');
+
+        $('.play-button').removeClass('hide');
+    });
 
     $('input:radio').click(function () {
         let planetClasses = $(this).attr('class');

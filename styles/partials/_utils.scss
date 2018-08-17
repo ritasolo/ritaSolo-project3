@@ -34,8 +34,14 @@ img {
 }
 
 .twinkling {
-            background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-            height: 90vh;
-            z-index:1;
-            animation:move-twink-back 500s linear infinite;
-        }
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  height: 90vh;
+  z-index:1;
+  animation:move-twink-back 500s linear infinite;
+}
+
+#play,
+#stop {
+  background-color: black;
+  font-size: 2vw;
+}

@@ -14,8 +14,16 @@
   <header>
 <!-- COVER BEGINS -->
     <div class="text">
-      <h1 class="title glitch" data-text="which planet are you from?">which planet are you from?</h1>
-      <h2 class="take-quiz">take the <a href="#questions" class="quiz-button white-out">QUIZ</a> to find out</h2>
+      <audio id="audio1" src="music.mp3"></audio>
+      
+      <a href="#" class="play-button hide">
+        <img src="images/play.png" alt="8-bit play button">
+      </a>
+      <a class="pause-button" href="#">
+        <img src="images/pause.png" alt="8-bit play button">
+      </a>
+      <h1 class="title glitch" data-text="so, what planet you from?">so, what planet you from?</h1>
+      <h2 class="take-quiz">a <a href="#questions" class="quiz-button white-out">PERSONALITY</a> test</h2>
       
     </div>    
     <div class="solarsystem">
@@ -51,7 +59,7 @@
         <input type="radio" id="q1-2" name="q1" class="neptune earth pluto"> 
         <label for ="q1-2">introverted.</label>
         <br>
-        <input type="radio" id="q1-3" value="0" name="q1" class="earth uranus mercury venus saturn">
+        <input type="radio" id="q1-3" name="q1" class="uranus mercury venus saturn">
         <label for="q1-3">somewhere in between.</label>
       </fieldset>
       <fieldset id="q2" class="hide">
@@ -60,23 +68,26 @@
         <br>
         <h2>what's your style?</h2>
         <br>
-        <input type="radio" id="q2-1" value="a" name="q2" class="venus">
-        <label for ="q2-1">flashy.</label>
+        <input type="radio" id="q2-1" name="q2" class="venus">
+        <label for ="q2-1">glamorous.</label>
         <br>
-        <input type="radio" id="q2-2" value="b" name="q2" class="uranus neptune pluto earth">
+        <input type="radio" id="q2-2" name="q2" class="uranus neptune pluto earth">
         <label for ="q2-2">alternative.</label>
         <br>
-        <input type="radio" id="q2-3" value="c" name="q2" class="mars mercury jupiter">
+        <input type="radio" id="q2-3" name="q2" class="mars mercury jupiter">
         <label for ="q2-3">athletic.</label>
         <br>
-        <input type="radio" id="q2-4" value="d" name="q2" class="neptune venus earth">
+        <input type="radio" id="q2-4" name="q2" class="neptune venus">
         <label for ="q2-4">loose/flowy.</label>
         <br>
-        <input type="radio" id="q2-5" value="e" name="q2" class="earth saturn mars mercury jupiter">
+        <input type="radio" id="q2-5" name="q2" class="earth saturn mars mercury jupiter">
         <label for ="q2-5">practical.</label>
         <br>
-        <input type="radio" id="q2-6" value="f" name="q2" class="earth mars mercury pluto">
+        <input type="radio" id="q2-6" name="q2" class="earth mars mercury pluto">
         <label for ="q2-6">whatever.</label>
+        <br>
+        <input type="radio" id="q2-7" name="q2" class="earth saturn uranus">
+        <label for="q2-7">classic.</label>
       </fieldset>
       <fieldset id="q3" class="hide">
         <h2>Q3</h2>
@@ -84,19 +95,19 @@
         <br>
         <h2>what's the first thing you notice about a room?</h2>
         <br>
-        <input type="radio" id="q3-1" value="a" name="q3" class="neptune pluto">
+        <input type="radio" id="q3-1" name="q3" class="neptune pluto">
         <label for="q3-1">the vibe.</label>
         <br>
-        <input type="radio" id="q3-2" value="b" name="q3" class="mars venus mercury">
+        <input type="radio" id="q3-2" name="q3" class="mars venus mercury">
         <label for="q3-2">who's there.</label>
         <br>
-        <input type="radio" id="q3-3" value="c" name="q3" class="venus saturn">
+        <input type="radio" id="q3-3" name="q3" class="venus saturn">
         <label for="q3-3">the design.</label>
         <br>
-        <input type="radio" id="q3-4" value="d" name="q3" class="mercury">
+        <input type="radio" id="q3-4" name="q3" class="mercury">
         <label for="q3-4">the layout.</label>
         <br>
-        <input type="radio" id="q3-5" value="e" name="q3" class="uranus">
+        <input type="radio" id="q3-5" name="q3" class="uranus">
         <label for="q3-5">whatever I came there to do.</label>
       </fieldset>
       <fieldset id="q4" class="hide">
@@ -105,25 +116,25 @@
         <br>
         <h2>what you wanna talk about?</h2>
         <br>
-        <input type="radio" id="q4-1" value="a" name="q4" class="venus mars">
+        <input type="radio" id="q4-1" name="q4" class="venus mars">
         <label for="q4-1">pop culture.</label>
         <br>
-        <input type="radio" id="q4-2" value="a" name="q4" class="earth mercury saturn uranus">
+        <input type="radio" id="q4-2" name="q4" class="earth mercury saturn uranus">
         <label for="q4-2">current events.</label>
         <br>
-        <input type="radio" id="q4-3" value="b" name="q4 " class="neptune pluto uranus">
+        <input type="radio" id="q4-3" name="q4 " class="neptune pluto uranus">
         <label for="q4-3">the occult.</label>
         <br>
-        <input type="radio" id="q4-4" value="c" name="q4" class="mercury mars">
+        <input type="radio" id="q4-4" name="q4" class="mercury mars">
         <label for="q4-4">sports.</label>
         <br>
-        <input type="radio" id="q4-5" value="d" name="q4" class="neptune pluto jupiter mars">
+        <input type="radio" id="q4-5" name="q4" class="neptune pluto jupiter mars">
         <label for="q4-5">music.</label>
         <br>
-        <input type="radio" id="q4-6" value="e" name="q4" class="venus jupiter">
+        <input type="radio" id="q4-6" name="q4" class="venus jupiter">
         <label for="q4-6">food.</label>
         <br>
-        <input type="radio" id="q4-7" value="f" name="q4" class="neptune pluto uranus jupiter saturn mercury">
+        <input type="radio" id="q4-7" name="q4" class="neptune pluto uranus jupiter saturn mercury">
         <label for="q4-7">philosophy.</label>
       </fieldset>
       <fieldset id="q5" class="hide">
@@ -132,13 +143,13 @@
         <br>
         <h2>what is real life?</h2>
         <br>
-        <input type="radio" id="q5-1" value="a" name="q5" class="saturn mercury jupiter">
+        <input type="radio" id="q5-1" name="q5" class="saturn mercury jupiter">
         <label for="q5-1">only the stuff you can see.</label>
         <br>
-        <input type="radio" id="q5-2" value="b" name="q5" class="venus mars jupiter earth">
+        <input type="radio" id="q5-2" name="q5" class="venus mars jupiter earth">
         <label for="q5-2">there's no way to know.</label>
         <br>
-        <input type="radio" id="q5-3" value="c" name="q5" class="neptune pluto uranus">
+        <input type="radio" id="q5-3" name="q5" class="neptune pluto uranus">
         <label for="q5-3">much more than meets the eye.</label>
       </fieldset>
       <fieldset id="q6" class="hide">
@@ -147,25 +158,25 @@
         <br>
         <h2>most important trait is..</h2>
         <br>
-        <input type="radio" id="q6-1" value="a" name="q6" class="earth saturn mercury">
+        <input type="radio" id="q6-1" name="q6" class="earth saturn mercury">
         <label for="q6-1">reliability.</label>
         <br>
-        <input type="radio" id="q6-2" value="b" name="q6" class="uranus neptune pluto">
+        <input type="radio" id="q6-2" name="q6" class="uranus neptune pluto">
         <label for="q6-2">openmindedness.</label>
         <br>
-        <input type="radio" id="q6-3" value="c" name="q6" class="venus neptune">
+        <input type="radio" id="q6-3" name="q6" class="venus neptune">
         <label for="q6-3">compassion.</label>
         <br>
-        <input type="radio" id="q6-4" value="c" name="q6" class="mars jupiter">
+        <input type="radio" id="q6-4" name="q6" class="mars jupiter">
         <label for="q6-4">ambition.</label>
         <br>
-        <input type="radio" id="q6-5" value="d" name="q6" class="venus saturn mars">
+        <input type="radio" id="q6-5" name="q6" class="venus saturn mars">
         <label for="q6-5">charm.</label>
         <br>
-        <input type="radio" id="q6-6" value="e" name="q6" class="saturn jupiter pluto">
+        <input type="radio" id="q6-6" name="q6" class="saturn jupiter pluto">
         <label for="q6-6">fairness.</label>
         <br>
-        <input type="radio" id="q6-7" value="f" name="q6" class="pluto jupiter saturn">
+        <input type="radio" id="q6-7" name="q6" class="pluto jupiter saturn">
         <label for="q6-7">truthfulness.</label>
       </fieldset>
       <fieldset id="q7" class="hide">
@@ -174,25 +185,25 @@
         <br>
         <h2>biggest turn off is..</h2>
         <br>
-        <input type="radio" id="q7-1" value="a" name="q7" class="venus saturn">
+        <input type="radio" id="q7-1" name="q7" class="venus saturn">
         <label for="q7-1">messiness.</label>
         <br>
-        <input type="radio" id="q7-2" value="b" name="q7" class="venus">
+        <input type="radio" id="q7-2" name="q7" class="venus">
         <label for="q7-2">frumpiness.</label>
         <br>
-        <input type="radio" id="q7-3" value="c" name="q7" class="mars jupiter">
+        <input type="radio" id="q7-3" name="q7" class="mars jupiter">
         <label for="q7-3">laziness.</label>
         <br>
-        <input type="radio" id="q7-4" value="d" name="q7" class="pluto uranus neptune earth">
+        <input type="radio" id="q7-4" name="q7" class="pluto uranus neptune earth">
         <label for="q7-4">closemindedness.</label>
         <br>
-        <input type="radio" id="q7-5" value="e" name="q7" class="neptune venus earth">
+        <input type="radio" id="q7-5" name="q7" class="neptune venus earth">
         <label for="q7-5">insensitivity.</label>
         <br>
-        <input type="radio" id="q7-6" value="f" name="q7" class="saturn jupiter mercury pluto">
+        <input type="radio" id="q7-6" name="q7" class="saturn jupiter mercury pluto">
         <label for="q7-6">lying.</label>
         <br>
-        <input type="radio" id="q7-7" value="f" name="q7" class="earth mercury pluto">
+        <input type="radio" id="q7-7" name="q7" class="earth mercury pluto">
         <label for="q7-7">irrationality.</label>
       </fieldset>
       <fieldset id="q8" class="hide">
@@ -201,25 +212,25 @@
         <br>
         <h2>what you rather do?</h2>
         <br>
-        <input type="radio" id="q8-1" value="a" name="q8" class="jupiter mars">
+        <input type="radio" id="q8-1" name="q8" class="jupiter mars">
         <label for="q8-1">play basketball.</label>
         <br>
-        <input type="radio" id="q8-2" value="b" name="q8" class="uranus mercury mars jupiter pluto saturn">
+        <input type="radio" id="q8-2" name="q8" class="uranus mercury mars jupiter pluto saturn">
         <label for="q8-2">debate.</label>
         <br>
-        <input type="radio" id="q8-3" value="c" name="q8" class="neptune pluto mercury uranus">
+        <input type="radio" id="q8-3" name="q8" class="neptune pluto mercury uranus">
         <label for="q8-3">explore a bookstore.</label>
         <br>
-        <input type="radio" id="q8-4" value="d" name="q8" class="venus jupiter mars pluto">
+        <input type="radio" id="q8-4" name="q8" class="venus jupiter mars pluto">
         <label for="q8-4">dance.</label>
         <br>
-        <input type="radio" id="q8-5" value="e" name="q8" class="saturn venus mars earth">
+        <input type="radio" id="q8-5" name="q8" class="saturn venus mars earth">
         <label for="q8-5">eat good food.</label>
         <br>
-        <input type="radio" id="q8-6" value="f" name="q8" class="uranus earth mercury saturn jupiter">
+        <input type="radio" id="q8-6" name="q8" class="uranus earth mercury saturn jupiter">
         <label for="q8-6">watch a ted talk.</label>
         <br>
-        <input type="radio" id="q8-7" value="f" name="q8" class="mars earth neptune">
+        <input type="radio" id="q8-7" name="q8" class="mars earth neptune">
         <label for="q8-7">go for a hike.</label>
       </fieldset>
       <fieldset id="q9" class="hide">
@@ -228,13 +239,13 @@
         <br>
         <h2>believe in ghosts?</h2>
         <br>
-        <input type="radio" id="q9-1" value="a" name="q9" class="mercury mars saturn">
+        <input type="radio" id="q9-1" name="q9" class="mercury mars saturn">
         <label for="q9-1">nope.</label>
         <br>
-        <input type="radio" id="q9-2" value="b" name="q9" class="neptune uranus pluto">
+        <input type="radio" id="q9-2" name="q9" class="neptune uranus pluto">
         <label for="q9-2">yes.</label>
         <br>
-        <input type="radio" id="q9-3" value="c" name="q9" class="venus jupiter earth">
+        <input type="radio" id="q9-3" name="q9" class="venus jupiter earth">
         <label for="q9-3">maybe.</label>
       </fieldset>
       <fieldset id="q10" class="hide">
@@ -243,25 +254,25 @@
         <br>
         <h2>what's the best thing about humans?</h2>
         <br>
-        <input type="radio" id="q10-1" value="a" name="q10" class="uranus pluto neptune mercury">
+        <input type="radio" id="q10-1" name="q10" class="uranus pluto neptune mercury">
         <label for="q10-1">free thinking.</label>
         <br>
-        <input type="radio" id="q10-2" value="b" name="q10" class="jupiter mercury saturn pluto">
+        <input type="radio" id="q10-2" name="q10" class="jupiter mercury saturn pluto">
         <label for="q10-2">science.</label>
         <br>
-        <input type="radio" id="q10-3" value="c" name="q10" class="neptune uranus venus">
+        <input type="radio" id="q10-3" name="q10" class="neptune uranus venus">
         <label for="q10-3">spirituality.</label>
         <br>
-        <input type="radio" id="q10-4" value="d" name="q10" class="earth saturn mars">
+        <input type="radio" id="q10-4" name="q10" class="earth saturn mars">
         <label for="q10-4">justice.</label>
         <br>
-        <input type="radio" id="q10-5" value="e" name="q10" class="saturn venus">
+        <input type="radio" id="q10-5" name="q10" class="saturn venus">
         <label for="q10-5">beauty.</label>
         <br>
-        <input type="radio" id="q10-6" value="f" name="q10" class="uranus uranus neptune pluto">
+        <input type="radio" id="q10-6" name="q10" class="uranus uranus neptune pluto">
         <label for="q10-6">freedom.</label>
         <br>
-        <input type="radio" id="q10-7" value="f" name="q10" class="earth uranus neptune pluto">
+        <input type="radio" id="q10-7" name="q10" class="earth uranus neptune pluto">
         <label for="q10-7">humour.</label>
       </fieldset>
       <input type="submit" value="where you from?" class="hide">
