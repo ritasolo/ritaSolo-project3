@@ -1,17 +1,28 @@
 
-@media only screen and (max-width: 680px) {
+@media (max-width: 680px) {
+    
+    header {
+        position: fixed;
+    }
+
+    header img {
+        visibility: hidden;
+    }
+
     form {
         width: 80%;
     }
+
     .solarsystem-text {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
         top: 0;
-        ul {
-            padding-bottom: 3rem;
+        img {
+            display: none;
         }
+
         li {
             margin: 0.2rem 0;
         }
@@ -24,7 +35,7 @@
     }
 
      .solarsystem-text {
-        position: relative;
+        position: fixed;
     }
 
     .glitch.you-are {

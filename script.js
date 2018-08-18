@@ -27,6 +27,7 @@ $(function () {
 
     $('.quiz-button').on("click", function() {
         $('.take-quiz').hide();
+        $('.title').hide();
         $('#q1').removeClass('hide');
     });
 
@@ -127,13 +128,6 @@ $(function () {
                 arr.filter(value => value === a).length 
                 - arr.filter(value => value === b).length
             ).pop();
-        }
-
-        function mode(arr) {
-            return arr.sort(function (a, b) {
-                return arr.filter(function (v) { return v === a }).length
-                    - arr.filter(function (v) { return v === b }).length
-            }).pop();
         }
 
         let userAnswer = count(planetArray);

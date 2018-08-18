@@ -952,7 +952,11 @@ input[type="radio"]:checked + label {
   .solarsystem-text input[type="reset"] {
     left: -7%; }
 
-@media only screen and (max-width: 680px) {
+@media (max-width: 680px) {
+  header {
+    position: fixed; }
+  header img {
+    visibility: hidden; }
   form {
     width: 80%; }
   .solarsystem-text {
@@ -968,8 +972,8 @@ input[type="radio"]:checked + label {
     align-items: center;
     padding: 0;
     top: 0; }
-    .solarsystem-text ul {
-      padding-bottom: 3rem; }
+    .solarsystem-text img {
+      display: none; }
     .solarsystem-text li {
       margin: 0.2rem 0; }
     .solarsystem-text .glitch {
@@ -977,7 +981,7 @@ input[type="radio"]:checked + label {
     .solarsystem-text input[type=reset] {
       left: 0.2rem; }
   .solarsystem-text {
-    position: relative; }
+    position: fixed; }
   .glitch.you-are {
     display: none; }
   input[type="submit"] {
