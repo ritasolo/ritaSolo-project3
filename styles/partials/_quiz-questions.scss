@@ -5,7 +5,6 @@
         z-index: 25;
         position: absolute;
         bottom: 3%;
-        left: 15%;
         overflow: hidden;
     }
 
@@ -20,6 +19,7 @@
 
     fieldset {
         border: 0;
+        margin: 0 10%;
         text-align: left;
         h2:last-of-type {
             margin-bottom: 2%;
@@ -68,7 +68,6 @@
         line-height: 4vw;
         padding: 10px 10px;
         z-index: 30;
-        left: -15%;
         margin-bottom: 5%;
     }
 
