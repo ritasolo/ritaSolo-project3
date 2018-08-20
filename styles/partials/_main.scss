@@ -3,7 +3,6 @@ body {
     z-index:0;
     overflow-x: hidden;
     font-size: 62.5%;
-
     .images {
         margin-right: 50px;
         display: flex;
@@ -13,7 +12,6 @@ body {
     .symbol {
         position: relative;
     }
-
 
     .glitch {
         position: relative;
@@ -37,7 +35,6 @@ body {
 
     .info h2 {
         font-size: 2rem;
-        // text-align: center;
     }
 
     .take-quiz {
